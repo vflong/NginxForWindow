@@ -4,11 +4,6 @@ rem Define nginx application directory and pid file path
 set NGINX_HOME=C:\Users\feilong\Documents\opt\nginx-1.10.3
 set NGINX_PID=%NGINX_HOME%\logs\nginx.pid
 
-rem Display help if no argument is given
-if "%1" == "" (
-	echo Usage: %~n0 ^<start^|stop^|quit^|reload^|reopen^>
-	exit /b
-)
 set SIGNAL=reload
 
 rem Start nginx
