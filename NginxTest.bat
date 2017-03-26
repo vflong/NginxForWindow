@@ -20,6 +20,7 @@ if "%SIGNAL%" == "start" (
 
 if "%SIGNAL%" == "test" (
 		nginx -t
+		pause
 	)
 	exit /b
 )
@@ -41,5 +42,3 @@ if exist "%NGINX_PID%" (
 ) else (
 	echo nginx is not running
 )
-
-pause

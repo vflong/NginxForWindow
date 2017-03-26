@@ -35,5 +35,3 @@ if exist "%NGINX_PID%" (
 ) else (
 	echo nginx is not running
 )
-
-pause
